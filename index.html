@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+		.banzhang{
+			display: block;
+			width: 600px;
+			height: 700px;
+			margin: 0 auto;
+			-webkit-filter: brightness(100) grayscale(1);
+			animation: ban 10s forwards;
+		}
+		@keyframes ban{
+			0%{
+				-webkit-filter: brightness(100) grayscale(1)  saturate(1);
+			}
+		
+			50%{
+				-webkit-filter: brightness(10) grayscale(0.25);
+			}
+			70%{
+				-webkit-filter: brightness(1) grayscale(0) hue-rotate(0deg);
+			}
+			100%{
+				-webkit-filter: brightness(1) grayscale(0) hue-rotate(360deg);
+			    
+			}
+		}
+		</style>
+	</head>
+	<body>
+		<img class="banzhang" src="./img/banzhang.jpg"/>
+	</body>
+</html>
